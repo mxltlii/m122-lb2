@@ -3,6 +3,7 @@ import json
 import report_creation
 import ftplib
 import smtplib
+import os
 
 # import the corresponding modules
 from email import encoders
@@ -93,3 +94,4 @@ with smtplib.SMTP("smtp.mailtrap.io", 2525) as server:
         sender_email, receiver_email, text
     )
 print('E-Mail Sent')
+os.remove('D:/TBZ/M122/Python/Projekt/report/report.pdf')

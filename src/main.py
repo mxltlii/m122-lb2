@@ -80,7 +80,7 @@ encoders.encode_base64(part)
 # Add header
 part.add_header(
     "Content-Disposition",
-    "attachment; filename= {filename}",
+    "attachment; filename= {report.pdf}",
 )
 
 # Add attachment to your message and convert it to string
